@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Wine } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -8,14 +8,14 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="sm:col-span-2">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <Wine className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
-              <span className="text-lg sm:text-xl font-semibold text-foreground">
+            <Link href="/" className="flex items-center gap-2 group">
+              <Image src="/favicon.ico" alt="Logo" width={32} height={32} />
+              <span className="text-lg sm:text-xl uppercase font-semibold tracking-tight text-foreground">
                 deutschkirschfan
               </span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-md">
-              Informationsportal über traditionellen deutschen Kirschbrand Kirschwasser 
+              Informationsportal über traditionellen deutschen Kirschbrand Kirschwasser
               und regionale alkoholische Getränke der Schwarzwald-Region.
             </p>
           </div>

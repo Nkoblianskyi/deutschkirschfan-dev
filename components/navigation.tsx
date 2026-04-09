@@ -2,7 +2,8 @@
 
 import Link from "next/link"
 import { useState } from "react"
-import { Menu, X, Wine } from "lucide-react"
+import { Menu, X } from "lucide-react"
+import Image from "next/image"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -26,7 +27,7 @@ export function Navigation() {
       <nav className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2 group">
-            <Wine className="h-5 w-5 sm:h-6 sm:w-6 text-primary transition-transform group-hover:rotate-12" />
+            <Image src="/favicon.ico" alt="Logo" width={32} height={32} />
             <span className="text-lg sm:text-xl uppercase font-semibold tracking-tight text-foreground">
               deutschkirschfan
             </span>
