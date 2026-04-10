@@ -1,3 +1,4 @@
+import { BreweryBeerCultureSection } from "@/components/brewery-beer-culture-section"
 import { HeroSection } from "@/components/hero-section"
 import { StrongSpiritSection } from "@/components/strong-spirit-section"
 import { HistorySection } from "@/components/history-section"
@@ -9,6 +10,7 @@ export default function HomePage() {
       <HeroSection />
       <StrongSpiritSection />
       <HistorySection />
+      <BreweryBeerCultureSection />
       <LocalSpiritsSection />
     </>
   )

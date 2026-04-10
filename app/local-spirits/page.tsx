@@ -1,7 +1,20 @@
 import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft, Beer, Wine, Grape, Wheat, MapPin, Thermometer } from "lucide-react"
+import {
+  ArrowLeft,
+  Beer,
+  Wine,
+  Grape,
+  Wheat,
+  MapPin,
+  Thermometer,
+  Building2,
+  Trees,
+  Palette,
+  ChefHat,
+  Sparkles,
+} from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Regionale Spirituosen Deutschlands",
@@ -227,6 +240,104 @@ export default function LocalSpiritsPage() {
                 Deutschland ist die Heimat des Reinheitsgebots — des Bierreinheitsgesetzes von 1516. 
                 Das Land produziert über 5000 Biersorten in mehr als 1300 Brauereien.
               </p>
+            </div>
+
+            <div
+              id="bierkultur-detail"
+              className="scroll-mt-28 mb-10 sm:mb-12 rounded-xl sm:rounded-2xl border border-border bg-background/60 p-5 sm:p-8 md:p-10"
+            >
+              <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-2 sm:mb-3 text-center">
+                Brauereien, Bierbars und lebendige Tradition
+              </h3>
+              <p className="text-muted-foreground text-sm sm:text-base text-center max-w-3xl mx-auto leading-relaxed mb-8 sm:mb-10">
+                Viele Besucher verbinden Deutschland zuerst mit Bier — doch hinter dem Glas stehen
+                Handwerk, Orte und Bräuche: vom Familienbetrieb bis zur modernen Bar, vom Biergarten
+                bis zur sichtbaren Brauküche. Die folgenden Aspekte gehören genauso zur Kultur wie
+                Sorte und Alkoholgehalt.
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-5 sm:gap-6">
+                <div className="rounded-lg sm:rounded-xl border border-border p-4 sm:p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="rounded-lg bg-primary/10 p-2 text-primary">
+                      <Building2 className="h-5 w-5" />
+                    </div>
+                    <h4 className="font-semibold text-foreground">Brauereien & Ausschank</h4>
+                  </div>
+                  <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
+                    <strong className="text-foreground font-medium">Brauereigaststätten</strong> verbinden
+                    Sudhaus und Schank: frisches Bier, oft direkt aus dem Lagerkeller.{" "}
+                    <strong className="text-foreground font-medium">Bierbars und Taprooms</strong> setzen
+                    auf kleine Sortimente, Fasswechsel und erklärende Ausschankkultur — ergänzt durch
+                    Snacks oder regionale Küche.
+                  </p>
+                </div>
+
+                <div className="rounded-lg sm:rounded-xl border border-border p-4 sm:p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="rounded-lg bg-accent/10 p-2 text-accent">
+                      <Trees className="h-5 w-5" />
+                    </div>
+                    <h4 className="font-semibold text-foreground">Biergärten & Geselligkeit</h4>
+                  </div>
+                  <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
+                    Der <strong className="text-foreground font-medium">Biergarten</strong> ist Ritual:
+                    eigene Brotzeit mitbringen oder Brezn und Obatzda bestellen, an langen Tischen
+                    sitzen. <strong className="text-foreground font-medium">Volksfeste und Stammtische</strong>{" "}
+                    zeigen, wie fest Bier in Fest- und Alltagskultur verwoben ist — von der Maß bis zur
+                    kleinen Halben.
+                  </p>
+                </div>
+
+                <div className="rounded-lg sm:rounded-xl border border-border p-4 sm:p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="rounded-lg bg-primary/10 p-2 text-primary">
+                      <Sparkles className="h-5 w-5" />
+                    </div>
+                    <h4 className="font-semibold text-foreground">Brauchtum & Geschichte</h4>
+                  </div>
+                  <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
+                    Das <strong className="text-foreground font-medium">Reinheitsgebot</strong> prägt
+                    bis heute das Selbstverständnis vieler Brauer. Regional leben{" "}
+                    <strong className="text-foreground font-medium">Kellerbierkultur</strong>,{" "}
+                    Rauchmalz-Tradition oder Weizenbiergärung weiter — oft mit klaren Namen für Stile
+                    und Gläser, die Einheimische sofort erkennen.
+                  </p>
+                </div>
+
+                <div className="rounded-lg sm:rounded-xl border border-border p-4 sm:p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="rounded-lg bg-accent/10 p-2 text-accent">
+                      <Palette className="h-5 w-5" />
+                    </div>
+                    <h4 className="font-semibold text-foreground">Raum, Dekor & Atmosphäre</h4>
+                  </div>
+                  <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
+                    <strong className="text-foreground font-medium">Kupferkessel</strong> hinter Glas,
+                    Holz, Fliesen und Fachwerk schaffen Wiedererkennung. Historische{" "}
+                    <strong className="text-foreground font-medium">Schilder, Krüge und Zunftsymbole</strong>{" "}
+                    erzählen von Handwerk und Ort — im Biergarten sorgen Bäume, Schotter und Lampions
+                    für eine ruhige, festliche Stimmung.
+                  </p>
+                </div>
+
+                <div className="md:col-span-2 rounded-lg sm:rounded-xl border border-primary/20 bg-primary/5 p-4 sm:p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="rounded-lg bg-primary/15 p-2 text-primary">
+                      <ChefHat className="h-5 w-5" />
+                    </div>
+                    <h4 className="font-semibold text-foreground">Rezeptur im Sudhaus & auf dem Teller</h4>
+                  </div>
+                  <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
+                    Im Braualltag bedeutet <strong className="text-foreground font-medium">Rezeptur</strong>{" "}
+                    die genaue Abstimmung von Malzsorten, Hopfen, Hefe und Wasser — Gärungstemperatur
+                    und Lagerzeit formen Aroma und Körper. In der{" "}
+                    <strong className="text-foreground font-medium">Brauereiküche</strong> taucht Bier als
+                    Zutat wieder auf: in Soßen und Eintöpfen, für Teige und Schmorgerichte oder als
+                    Begleiter zu deftigen Speisen — ein roter Faden zwischen Brauort und Teller.
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">

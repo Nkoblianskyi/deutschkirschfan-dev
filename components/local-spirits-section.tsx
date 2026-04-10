@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, MapPin, Beer, Wine, Grape } from "lucide-react"
+import { ArrowRight, MapPin, Beer, Wine, Grape, Building2, Trees } from "lucide-react"
 
 const spirits = [
   {
@@ -41,11 +41,40 @@ export function LocalSpiritsSection() {
               Regionale Spirituosen Deutschlands
             </h2>
             
-            <p className="text-muted-foreground text-base sm:text-lg leading-relaxed mb-8 sm:mb-10">
+            <p className="text-muted-foreground text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
               Neben dem berühmten Kirschwasser ist die Region für ihre Vielfalt 
               an traditionellen Getränken bekannt — von Obstbränden bis hin zu 
               klassischem deutschen Bier.
             </p>
+
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-10">
+              <div className="flex-1 rounded-xl border border-border bg-background/80 p-4 sm:p-5 flex gap-3">
+                <div className="shrink-0 rounded-lg bg-primary/10 p-2.5 text-primary">
+                  <Building2 className="h-5 w-5" />
+                </div>
+                <div>
+                  <p className="font-semibold text-foreground text-sm sm:text-base mb-1">
+                    Brauereien & Bierbars
+                  </p>
+                  <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
+                    Gasthausbrauereien, urige Stuben und Biergärten — oft dort genießen, wo gebraut wird.
+                  </p>
+                </div>
+              </div>
+              <div className="flex-1 rounded-xl border border-border bg-background/80 p-4 sm:p-5 flex gap-3">
+                <div className="shrink-0 rounded-lg bg-accent/10 p-2.5 text-accent">
+                  <Trees className="h-5 w-5" />
+                </div>
+                <div>
+                  <p className="font-semibold text-foreground text-sm sm:text-base mb-1">
+                    Kultur & Rezeptur
+                  </p>
+                  <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
+                    Von Reinheitsgebot und Festen bis zu Kupferkesseln und Bier in der regionalen Küche.
+                  </p>
+                </div>
+              </div>
+            </div>
 
             {/* Spirit Cards */}
             <div className="space-y-3 sm:space-y-4 mb-8 sm:mb-10">
